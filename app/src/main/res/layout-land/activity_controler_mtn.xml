@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Spinner
+        android:id="@+id/spinnerstatut"
+        android:layout_width="250dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="132dp"
+        android:layout_marginEnd="88dp"
+        android:entries="@array/spinner_on_off"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewstatut"
+        android:layout_width="93dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="148dp"
+        android:layout_marginEnd="24dp"
+        android:text="@string/statut"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/spinnerstatut"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewVitesse"
+        android:layout_width="86dp"
+        android:layout_height="26dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="132dp"
+        android:text="@string/vitesse"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/spinnerVitesse" />
+
+    <Spinner
+        android:id="@+id/spinnerVitesse"
+        android:layout_width="243dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="92dp"
+        android:entries="@array/spinner_vitesse"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerstatut" />
+
+    <Button
+        android:id="@+id/buttonEnvoyer"
+        android:layout_width="134dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginBottom="44dp"
+        android:text="@string/envoyer"
+        app:layout_constraintBottom_toTopOf="@+id/buttonAcceuill"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonAcceuill"
+        android:layout_width="129dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginBottom="72dp"
+        android:text="@string/acceuil"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonhr"
+        android:layout_width="139dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginBottom="32dp"
+        android:text="@string/horairement"
+        app:layout_constraintBottom_toTopOf="@+id/buttonEnvoyer"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

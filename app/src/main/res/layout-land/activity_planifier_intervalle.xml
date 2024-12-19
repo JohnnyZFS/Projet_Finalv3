@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:id="@+id/textViewptumu"
+        android:layout_width="273dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="228dp"
+        android:layout_marginTop="64dp"
+        android:text="@string/planifier_tache_par_intervalle_regulieres"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewStatut2"
+        android:layout_width="64dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="88dp"
+        android:text="@string/statut"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewptumu" />
+
+    <TextView
+        android:id="@+id/textViewVitesse2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="48dp"
+        android:text="@string/vitesse"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewStatut2" />
+
+    <TextView
+        android:id="@+id/textViewDans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:text="@string/chaque"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/spinneintervalle"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnacceill3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginBottom="12dp"
+        android:text="@string/acceuil"
+        app:layout_constraintBottom_toTopOf="@+id/ulterieur"
+        app:layout_constraintStart_toEndOf="@+id/spinnerVitesse3" />
+
+    <Button
+        android:id="@+id/ulterieur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="72dp"
+        android:text="@string/ulterieurement"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/spinnerVitesse3" />
+
+    <Button
+        android:id="@+id/buttonsauvegarder3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="104dp"
+        android:text="@string/sauvegarder"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinnerstatut3"
+        android:layout_width="270dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="52dp"
+        android:entries="@array/spinner_on_off"
+        app:layout_constraintStart_toEndOf="@+id/textViewStatut2"
+        app:layout_constraintTop_toBottomOf="@+id/textViewptumu" />
+
+    <Spinner
+        android:id="@+id/spinnerVitesse3"
+        android:layout_width="285dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="28dp"
+        android:entries="@array/spinner_vitesse"
+        app:layout_constraintStart_toEndOf="@+id/textViewVitesse2"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerstatut3" />
+
+    <Spinner
+        android:id="@+id/spinneintervalle"
+        android:layout_width="291dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="336dp"
+        android:entries="@array/spinner_duree_longue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerVitesse3" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

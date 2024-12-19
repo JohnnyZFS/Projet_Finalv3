@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <EditText
+        android:id="@+id/editTextIp"
+        android:layout_width="268dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:hint="@string/ip"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextPort"
+        android:layout_width="267dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="@string/port"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextIp" />
+
+    <Button
+        android:id="@+id/button_Sauvegarder"
+        android:layout_width="157dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/sauvegarder"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPort" />
+
+    <Button
+        android:id="@+id/buttonSatut"
+        android:layout_width="153dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/statut"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_Sauvegarder" />
+
+    <Button
+        android:id="@+id/buttonControler"
+        android:layout_width="165dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/controler"
+        app:layout_constraintStart_toEndOf="@+id/buttonSatut"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPlanifier" />
+
+    <Button
+        android:id="@+id/buttonPlanifier"
+        android:layout_width="163dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/planifier"
+        app:layout_constraintStart_toEndOf="@+id/buttonSatut"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPort" />
+
+    <Button
+        android:id="@+id/buttonNvl_connection"
+        android:layout_width="177dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="384dp"
+        android:layout_marginTop="48dp"
+        android:text="@string/nouvelle_connection"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonNtf"
+        android:layout_width="140dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="176dp"
+        android:layout_marginBottom="48dp"
+        android:text="@string/notifier"
+        app:layout_constraintBottom_toTopOf="@+id/buttonPlanifier"
+        app:layout_constraintStart_toEndOf="@+id/button_Sauvegarder" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

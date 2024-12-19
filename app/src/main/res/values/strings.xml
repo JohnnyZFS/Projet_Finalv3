@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">Projet_Final</string>
+    <string name="title_activity_planifier_intervalle">Planifier_intervalle</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+
+
+    <string name="ip">Ip</string>
+    <string name="port">Port</string>
+    <string name="sauvegarder">Sauvegarder</string>
+    <string name="statut">Statut</string>
+    <string name="controler">Controler</string>
+    <string name="planifier">Planifier</string>
+    <string name="d_lai_de_mise_jour_auto">Délai de mise à jour auto:</string>
+    <string name="vitesse">Vitesse</string>
+    <string name="acceuil">Acceuil</string>
+    <string name="actualiser">Actualiser</string>
+    <string name="textview">TextView</string>
+    <string name="textviewon">TextViewon</string>
+    <string name="envoyer">Envoyer</string>
+    <string name="planifier_tache_a_un_moment_ulterieur">Planifier tache a un moment ulterieur</string>
+    <string name="dans">Dans</string>
+    <string name="horairement">Horairement</string>
+    <string name="ulterieurement">Ulterieurement</string>
+    <string name="planifier_tache_par_intervalle_regulieres">Planifier tache par intervalle regulieres</string>
+    <string name="chaque">Chaque</string>
+    <string name="nouvelle_connection">Nouvelle Connection</string>
+    <string name="notifier">Notifier</string>
+
+    <!-- Spinner entries -->
+    <string-array name="spinner_on_off">
+        <item>On</item>
+        <item>Off</item>
+    </string-array>
+
+    <string-array name="spinner_vitesse">
+        <item>Haute</item>
+        <item>Moyenne</item>
+        <item>Basse</item>
+    </string-array>
+
+    <string-array name="spinner_duree_courte">
+        <item>15 min</item>
+        <item>30 min</item>
+        <item>45 min</item>
+        <item>1 h</item>
+    </string-array>
+
+    <string-array name="spinner_duree_longue">
+        <item>1 heure</item>
+        <item>1 jour</item>
+        <item>1 semaine</item>
+    </string-array>
+</resources>

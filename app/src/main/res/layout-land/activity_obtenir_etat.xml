@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/textViewONOFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="500dp"
+        android:layout_marginBottom="32dp"
+        android:text="@string/textviewon"
+        app:layout_constraintBottom_toTopOf="@+id/textVitesse"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textVitesse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="532dp"
+        android:layout_marginBottom="28dp"
+        android:text="@string/textview"
+        app:layout_constraintBottom_toTopOf="@+id/buttonActualiser"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/buttonActualiser"
+        android:layout_width="125dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginBottom="28dp"
+        android:text="@string/actualiser"
+        app:layout_constraintBottom_toTopOf="@+id/buttonAcceuil"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonAcceuil"
+        android:layout_width="125dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginBottom="64dp"
+        android:text="@string/acceuil"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewStatut"
+        android:layout_width="59dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginBottom="32dp"
+        android:text="@string/statut"
+        app:layout_constraintBottom_toTopOf="@+id/textViewVit"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewVit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginBottom="28dp"
+        android:text="@string/vitesse"
+        app:layout_constraintBottom_toTopOf="@+id/buttonActualiser"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewDelais"
+        android:layout_width="162dp"
+        android:layout_height="37dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="48dp"
+        android:text="@string/d_lai_de_mise_jour_auto"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/spinnerchoixdelais" />
+
+    <Spinner
+        android:id="@+id/spinnerchoixdelais"
+        android:layout_width="236dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="40dp"
+        android:entries="@array/spinner_duree_courte"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/buttonctr"
+        android:layout_width="142dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginBottom="56dp"
+        android:text="@string/controler"
+        app:layout_constraintBottom_toTopOf="@+id/textViewDelais"
+        app:layout_constraintStart_toEndOf="@+id/buttonActualiser" />
+</androidx.constraintlayout.widget.ConstraintLayout>
